@@ -1,0 +1,129 @@
+from colorama import Fore, Back, Style
+import time
+import random
+
+print("\033c", end="")
+
+print(f"""{Fore.LIGHTRED_EX}
+                      /^\\
+           /         (/^\)     /
+      \   ( \         \ /     ( \     /^\\
+     / )   \ |        _|_      \ |   |/^\|
+    | /    _|_        | |      _|_    \ /{Fore.CYAN}
+    _|_    | |        | |      | |    _|_
+    | |    | |        | |      | |    | |
+    | |    | |    ****| |******| |    | |
+    | |****| |****    | |      | |****| |
+   *| |    | |                 | |    | |*****
+ *  | |   {Fore.YELLOW}С     Д  Н  Е  М{Fore.CYAN}            | |      *
+*                                               *
+| *            {Fore.YELLOW}Р  О  Ж  Д  Е  Н  И  Я  !{Fore.CYAN}      * |
+|  *****                                 *****  |
+|@      **********             **********      @|
+| @   @           *************           @   @ |
+|  @@@ @    @                       @    @ @@@  |
+|       @@@@ @      @       @      @ @@@@       |
+ *            @@@@@@ @     @ @@@@@@            *
+  *                   @@@@@                   *
+   *****                                 *****
+        **********             **********
+                  *************
+
+""")
+
+time.sleep(5)
+
+print("\033c", end="")
+print(f"""{Fore.CYAN}                     
+                      _|_
+           _|_        | |      _|_    
+    _|_    | |        | |      | |    _|_
+    | |    | |        | |      | |    | |
+    | |    | |    ****| |******| |    | |
+    | |****| |****    | |      | |****| |
+   *| |    | |                 | |    | |*****
+ *  | |   {Fore.YELLOW}С     Д  Н  Е  М{Fore.CYAN}            | |      *
+*                                               *
+| *            {Fore.YELLOW}Р  О  Ж  Д  Е  Н  И  Я  !{Fore.CYAN}      * |
+|  *****                                 *****  |
+|@      **********             **********      @|
+| @   @           *************           @   @ |
+|  @@@ @    @                       @    @ @@@  |
+|       @@@@ @      @       @      @ @@@@       |
+ *            @@@@@@ @     @ @@@@@@            *
+  *                   @@@@@                   *
+   *****                                 *****
+        **********             **********
+                  *************
+
+""")
+
+time.sleep(5)
+
+gift = "С ДНЕМ РОЖДЕНИЯ GBOARD!\nЯ надеюсь ты хорошо провел день сегодня!"
+colors = [
+    Fore.BLACK,
+    Fore.RED,
+    Fore.GREEN,
+    Fore.YELLOW,
+    Fore.BLUE,
+    Fore.MAGENTA,
+    Fore.CYAN,
+    Fore.WHITE,
+    Fore.RESET,
+    Fore.LIGHTBLACK_EX,
+    Fore.LIGHTRED_EX,
+    Fore.LIGHTGREEN_EX,
+    Fore.LIGHTYELLOW_EX,
+    Fore.LIGHTBLUE_EX,
+    Fore.LIGHTMAGENTA_EX,
+    Fore.LIGHTCYAN_EX,
+    Fore.LIGHTWHITE_EX
+]
+
+print("\033c", end="")
+
+for i in list(gift):
+    print(random.choice(colors), end="")
+    print(i, end="")
+    time.sleep(0.1)
+
+time.sleep(5)
+
+print("\033c", end="")
+print(f'{Fore.RESET}Это еще не все!\nТебе надо разгадать загадку бота @idk_gboard_bot')
+
+while not input("1 код из бота: ") == "1_ISPITANIE_EZ":
+    print(f'{Fore.RED}Код не валид :({Fore.RESET}')
+
+print("Это было слишком просто, давай 2 код :)")
+
+while not input("2 код из бота: ") == "2SetUp2SetUp":
+    print(f'{Fore.RED}Код не валид :({Fore.RESET}')
+
+print("Молодец, но давай 3 код :)")
+
+while not input("3 код из бота: ") == "Key3_GboardHappyBirthday":
+    print(f'{Fore.RED}Код не валид :({Fore.RESET}')
+
+print("Где ты его нашел? Ладно, жду 4 код :)")
+
+while not input("4 код из бота: ") == "4__P_OK":
+    print(f'{Fore.RED}Код не валид :({Fore.RESET}')
+
+print("Осталось совсем немного! Жду 5 код и ты свободен!")
+
+while not input("5 код из бота: ") == "5_YAY_KEY":
+    print(f'{Fore.RED}Код не валид :({Fore.RESET}')
+
+win = "Поздравляю! \nТы прошел все что я хотел! Удачи, можешь закрыть этот скрипт нажав Enter..."
+print(Fore.LIGHTGREEN_EX, end="")
+
+for i in list(win):
+    print(i, end="")
+    time.sleep(0.1)
+
+input()
+
+import sys
+sys.exit()
